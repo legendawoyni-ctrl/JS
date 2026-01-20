@@ -81,10 +81,125 @@
 // i--;
 // } while (i >= 0)
 
-for (let i = 1; i <= 5; i++) {
-  if (i === 1) console.log("*");
-  if (i === 2) console.log("**");
-  if (i === 3) console.log("***");
-  if (i === 4) console.log("****");
-  if (i === 5) console.log("*****");
+// for (let i = 1; i <= 5; i++) {
+//   let qator = "";
+//   for (let k = 0; k < i; k++) {
+//     qator += "*";
+//   }
+//   console.log(qator);
+// }
+
+// const kalkulator = (son1, son2, amal) => {
+//   let natija;
+//   switch (amal) {
+//     case "+": 
+//       natija = son1 + son2;
+//       break;
+//     case "-":
+//       natija = son1 - son2;
+//       break;    
+//     case "*":
+//       natija = son1 * son2;
+//       break;  
+//     case "/":
+//       natija = son1 / son2;
+//       break;  
+//     default:
+//       natija = "Noto'g'ri amal kiritildi";
+//   }
+//   return natija;
+// };
+// console.log(kalkulator(10, 5, "+"));
+// console.log(kalkulator(10, 5, "-"));
+// console.log(kalkulator(10, 5, "*"));
+// console.log(kalkulator(10, 5, "/"));
+
+// function baholash(ball){
+//   let baho;
+//   if( ball >= 95 ) {
+//       baho = "A'lo";
+//   } else if (ball >=70){
+//       baho = "Qoniqarli";
+//   }
+//   else if (ball <= 45){
+//       baho = "Yomon"
+//   } else if (ball <= 10){
+//       baho = "Juda yomon"
+//   }
+
+//   return baho;
+// }
+
+// console.log(baholash(95));
+// console.log(baholash(72));
+// console.log(baholash(10));
+
+// function juftVatoqson(son){
+//   if(son % 2 == 0){
+//     console.log("Juft son");
+//   } else {
+//     console.log("Toq son");
+//   }
+// }
+// juftVatoqson(2);
+// juftVatoqson(5);
+
+// function EngKattasi(a,b,c) {
+// let maksimum = a;
+//  if (b > maksimum) {
+//   maksimum = b;
+//  }
+// if (c > maksimum) {
+//   maksimum = c;
+// }
+// console.log ("Eng kotta son",maksimum)
+// }
+// EngKattasi(3,7,9);
+// EngKattasi(8,3,5);
+
+// let sonlar = [10,20,30];
+
+// sonlar.push(40);
+// console.log(sonlar);
+
+// sonlar.unshift(5);
+// console.log(sonlar)
+
+// sonlar.pop();
+// console.log(sonlar);
+
+// sonlar.shift();
+// console.log(sonlar);
+
+// Quyidagi massivga "Anor" va "Nok" mevalarini oxiriga qo'shing. 
+let mevalar = ["Olma", "Banan", "Uzum"];
+mevalar.push("Anor","Nok");
+console.log(mevalar);
+// Quyidagi massivdan oxirgi 2 ta elementni olib tashlang va ularni konsolga chiqaring. 
+let sonlar = [10, 20, 30, 40, 50];
+
+let ohiri1 = sonlar.pop();
+let ohiri2 = sonlar.pop();
+
+console.log(ohiri2, ohiri1); 
+console.log(sonlar);       
+
+// Array ichidagi fagat juft sonlarni chiqarish kerak. 
+let numbers = [5, 12, 8, 17, 4, 21, 16, 9];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] % 2 === 0) {
+    console.log(numbers[i]);
+  }
 }
+
+// Array nechta manfiy son borligini aniqlab chiqar. 
+let arr1 = [3, -5, 8, -2, 0, -9, 4, -1];
+
+let count = 0;
+for (let i = 0; i < arr1.length; i++) {
+  if (arr1[i] < 0) {
+    count++;
+  }
+}
+console.log(count);
