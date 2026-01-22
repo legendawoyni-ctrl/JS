@@ -172,34 +172,85 @@
 // console.log(sonlar);
 
 // Quyidagi massivga "Anor" va "Nok" mevalarini oxiriga qo'shing. 
-let mevalar = ["Olma", "Banan", "Uzum"];
-mevalar.push("Anor","Nok");
-console.log(mevalar);
-// Quyidagi massivdan oxirgi 2 ta elementni olib tashlang va ularni konsolga chiqaring. 
-let sonlar = [10, 20, 30, 40, 50];
+// let mevalar = ["Olma", "Banan", "Uzum"];
+// mevalar.push("Anor","Nok");
+// console.log(mevalar);
+// // Quyidagi massivdan oxirgi 2 ta elementni olib tashlang va ularni konsolga chiqaring. 
+// let sonlar = [10, 20, 30, 40, 50];
 
-let ohiri1 = sonlar.pop();
-let ohiri2 = sonlar.pop();
+// let ohiri1 = sonlar.pop();
+// let ohiri2 = sonlar.pop();
 
-console.log(ohiri2, ohiri1); 
-console.log(sonlar);       
+// console.log(ohiri2, ohiri1); 
+// console.log(sonlar);       
 
-// Array ichidagi fagat juft sonlarni chiqarish kerak. 
-let numbers = [5, 12, 8, 17, 4, 21, 16, 9];
+// // Array ichidagi fagat juft sonlarni chiqarish kerak. 
+// let numbers = [5, 12, 8, 17, 4, 21, 16, 9];
 
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 === 0) {
-    console.log(numbers[i]);
-  }
-}
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     console.log(numbers[i]);
+//   }
+// }
 
-// Array nechta manfiy son borligini aniqlab chiqar. 
-let arr1 = [3, -5, 8, -2, 0, -9, 4, -1];
+// // Array nechta manfiy son borligini aniqlab chiqar. 
+// let arr1 = [3, -5, 8, -2, 0, -9, 4, -1];
 
-let count = 0;
-for (let i = 0; i < arr1.length; i++) {
-  if (arr1[i] < 0) {
-    count++;
-  }
-}
-console.log(count);
+// let count = 0;
+// for (let i = 0; i < arr1.length; i++) {
+//   if (arr1[i] < 0) {
+//     count++;
+//   }
+// }
+// console.log(count);
+
+// let texnologiyalar = ["HTML","JavaScript","Python","Java","CSS","React"];
+// let kesim1 = texnologiyalar.slice(1, 4);
+// console.log(kesim1);
+// // console.log(texnologiyalar)
+
+
+// let fanlar =["Ona T","Matem","Tarix","Ingliz",];
+// let ozgartir = fanlar.splice(1,1, "Informatika");
+// console.log(ozgartir);
+// console.log(fanlar); 
+
+
+// let Ranglar =["Qizil","Yashil","Kok","Sariq","Oq","Olma","Shaftoli",]
+// let fruit = Ranglar.slice(5);
+// console.log(fruit)
+
+
+
+// let mevalar11 = ["HTML","CSS","JS","PYTHON","JAVA"];
+// let tanlangan2 = mevalar11.splice(2,1, "TypeScript");
+// console.log(tanlangan2); 
+// console.log(mevalar11)
+
+
+// let Ballar =[75,85,90,60,80,95];
+// let kattalar = Ballar.filter(son => son > 80);
+// console.log(kattalar);
+
+let Prices = [150, 80, 200, 50, 120];
+let Produkt = Prices.find(p => p < 100);
+console.log(Produkt);
+
+let Scores = [70, 85, 90, 95, 80];
+let natijaa = Scores.find(s => s >= 90);
+console.log(natijaa);
+
+let Fruits = ["olma", "banan", "bpelsin", "shaftoli"];
+let mevalarr = [];
+Fruits.forEach(f => {
+  mevalarr.push(f[0].toUpperCase() + f.slice(1));
+});
+console.log(mevalarr);
+
+let shaharlar = ["Toshkent", "Samarqand", "Buxoro", "Xiva", "Namangan", "Andijon"];
+let ohirii = shaharlar.slice(-3);
+console.log(ohirii);
+
+let fanlar2 = ["Ingliz tili", "Tarix", "Matematika", "Fizika", "Kimyo"];
+fanlar2.splice(2, 2, "Dasturlash");
+console.log(fanlar2);
