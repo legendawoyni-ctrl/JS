@@ -126,7 +126,7 @@
 //   } else if (ball <= 10){
 //       baho = "Juda yomon"
 //   }
-
+ 
 //   return baho;
 // }
 
@@ -179,7 +179,7 @@
 // let sonlar = [10, 20, 30, 40, 50];
 
 // let ohiri1 = sonlar.pop();
-// let ohiri2 = sonlar.pop();
+// let ohiri2 = sonlar.pop(); n
 
 // console.log(ohiri2, ohiri1); 
 // console.log(sonlar);       
@@ -232,25 +232,115 @@
 // let kattalar = Ballar.filter(son => son > 80);
 // console.log(kattalar);
 
-let Prices = [150, 80, 200, 50, 120];
-let Produkt = Prices.find(p => p < 100);
-console.log(Produkt);
+// let Prices = [150, 80, 200, 50, 120];
+// let Produkt = Prices.find(p => p < 100);
+// console.log(Produkt);
 
-let Scores = [70, 85, 90, 95, 80];
-let natijaa = Scores.find(s => s >= 90);
-console.log(natijaa);
+// let Scores = [70, 85, 90, 95, 80];
+// let natijaa = Scores.find(s => s >= 90);
+// console.log(natijaa);
 
-let Fruits = ["olma", "banan", "bpelsin", "shaftoli"];
-let mevalarr = [];
-Fruits.forEach(f => {
-  mevalarr.push(f[0].toUpperCase() + f.slice(1));
-});
-console.log(mevalarr);
+// let Fruits = ["olma", "banan", "bpelsin", "shaftoli"];
+// let mevalarr = [];
+// Fruits.forEach(f => {
+//   mevalarr.push(f[0].toUpperCase() + f.slice(1));
+// });
+// console.log(mevalarr);
 
-let shaharlar = ["Toshkent", "Samarqand", "Buxoro", "Xiva", "Namangan", "Andijon"];
-let ohirii = shaharlar.slice(-3);
-console.log(ohirii);
+// let shaharlar = ["Toshkent", "Samarqand", "Buxoro", "Xiva", "Namangan", "Andijon"];
+// let ohirii = shaharlar.slice(-3);
+// console.log(ohirii);
 
-let fanlar2 = ["Ingliz tili", "Tarix", "Matematika", "Fizika", "Kimyo"];
-fanlar2.splice(2, 2, "Dasturlash");
-console.log(fanlar2);
+// let fanlar2 = ["Ingliz tili", "Tarix", "Matematika", "Fizika", "Kimyo"];
+// fanlar2.splice(2, 2, "Dasturlash");
+// console.log(fanlar2);
+
+
+//AMALIYOT
+
+const car = {
+  nomi: "Chevrolet",
+  rangi: "oq",
+  yili: 2022
+};
+
+console.log("Mashina:", car);
+
+let foydalanuvchi = {
+  ism: "Jasur",
+  yosh: 25,
+  shahar: "Toshkent"
+};
+
+foydalanuvchi.email = "JASURBEKmonstr@gmail.com";
+foydalanuvchi.yosh = 26;
+
+console.log("Foydalanuvchi:", foydalanuvchi);
+
+let talaba4 = {
+  ism: "Madina",
+  fakultet: "Informatika",
+  shahar: "Samarqand",
+  yil: 2
+};
+
+delete talaba4.shahar;
+
+console.log("Talaba:", talaba4);
+
+
+  let talabalar =[
+  {ism:"Ali",ball: 75},
+  {ism:"Vali",ball: 85},
+  {ism:"Guli",ball: 90},
+  {ism:"Olim",ball: 60}
+  ]
+  let yuqoriBallilar = talabalar.filter(t => t.ball > 80);
+console.log("80 dan yuqori ball olganlar:", yuqoriBallilar);
+
+
+
+let mahsulotlar =[
+{id:1,nomi:"Telefon",narxi:3000000},
+{id:2,nomi:"Laptop",narxi:8000000},
+{id:3,nomi:"Planshet",narxi:2500000}
+]
+let topilganMahsulot = mahsulotlar.find(m => m.id === 3);
+
+console.log("Topilgan mahsulot:", topilganMahsulot);
+console.log("Narxi:", topilganMahsulot.narxi);
+
+//UYGA VAZIFA
+//1 MASIQ
+let talaba44 = {
+  ism: "Madina",
+  fakultet: "Informatika",
+  shahar: "Samarqand",
+  yili: 2
+};
+delete talaba4.shahar;
+console.log("Shahar o'chirilgandan keyin:", talaba4);
+
+//2 MASHQ
+
+let person = {
+  ism: "Karim",
+  yosh: 30
+};
+
+person.greet = function() {
+  console.log(`Salom, mening ismim ${this.ism}`);
+};
+
+person.greet();
+
+//3 MASHQ
+
+let kitob = {
+  nomi: "JavaScript Dasturlash",
+  muallif: "Saidjon",
+  yil: 2020
+};
+let yangiKitob = { kitob };
+console.log("Real kitob:", kitob);
+console.log("Nusxa kitob:", yangiKitob);
