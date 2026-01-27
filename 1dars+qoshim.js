@@ -258,89 +258,168 @@
 
 //AMALIYOT
 
-const car = {
-  nomi: "Chevrolet",
-  rangi: "oq",
-  yili: 2022
-};
+// const car = {
+//   nomi: "Chevrolet",
+//   rangi: "oq",
+//   yili: 2022
+// };
 
-console.log("Mashina:", car);
+// console.log("Mashina:", car);
 
-let foydalanuvchi = {
-  ism: "Jasur",
-  yosh: 25,
-  shahar: "Toshkent"
-};
+// let foydalanuvchi = {
+//   ism: "Jasur",
+//   yosh: 25,
+//   shahar: "Toshkent"
+// };
 
-foydalanuvchi.email = "JASURBEKmonstr@gmail.com";
-foydalanuvchi.yosh = 26;
+// foydalanuvchi.email = "JASURBEKmonstr@gmail.com";
+// foydalanuvchi.yosh = 26;
 
-console.log("Foydalanuvchi:", foydalanuvchi);
+// console.log("Foydalanuvchi:", foydalanuvchi);
 
-let talaba4 = {
-  ism: "Madina",
-  fakultet: "Informatika",
-  shahar: "Samarqand",
-  yil: 2
-};
+// let talaba4 = {
+//   ism: "Madina",
+//   fakultet: "Informatika",
+//   shahar: "Samarqand",
+//   yil: 2
+// };
 
-delete talaba4.shahar;
+// delete talaba4.shahar;
 
-console.log("Talaba:", talaba4);
-
-
-  let talabalar =[
-  {ism:"Ali",ball: 75},
-  {ism:"Vali",ball: 85},
-  {ism:"Guli",ball: 90},
-  {ism:"Olim",ball: 60}
-  ]
-  let yuqoriBallilar = talabalar.filter(t => t.ball > 80);
-console.log("80 dan yuqori ball olganlar:", yuqoriBallilar);
+// console.log("Talaba:", talaba4);
 
 
+//   let talabalar =[
+//   {ism:"Ali",ball: 75},
+//   {ism:"Vali",ball: 85},
+//   {ism:"Guli",ball: 90},
+//   {ism:"Olim",ball: 60}
+//   ]
+//   let yuqoriBallilar = talabalar.filter(t => t.ball > 80);
+// console.log("80 dan yuqori ball olganlar:", yuqoriBallilar);
 
-let mahsulotlar =[
-{id:1,nomi:"Telefon",narxi:3000000},
-{id:2,nomi:"Laptop",narxi:8000000},
-{id:3,nomi:"Planshet",narxi:2500000}
-]
-let topilganMahsulot = mahsulotlar.find(m => m.id === 3);
 
-console.log("Topilgan mahsulot:", topilganMahsulot);
-console.log("Narxi:", topilganMahsulot.narxi);
 
-//UYGA VAZIFA
-//1 MASIQ
-let talaba44 = {
-  ism: "Madina",
-  fakultet: "Informatika",
-  shahar: "Samarqand",
-  yili: 2
-};
-delete talaba4.shahar;
-console.log("Shahar o'chirilgandan keyin:", talaba4);
+// let mahsulotlar =[
+// {id:1,nomi:"Telefon",narxi:3000000},
+// {id:2,nomi:"Laptop",narxi:8000000},
+// {id:3,nomi:"Planshet",narxi:2500000}
+// ]
+// let topilganMahsulot = mahsulotlar.find(m => m.id === 3);
 
-//2 MASHQ
+// console.log("Topilgan mahsulot:", topilganMahsulot);
+// console.log("Narxi:", topilganMahsulot.narxi);
 
-let person = {
-  ism: "Karim",
-  yosh: 30
-};
+// //UYGA VAZIFA
+// //1 MASIQ
+// let talaba44 = {
+//   ism: "Madina",
+//   fakultet: "Informatika",
+//   shahar: "Samarqand",
+//   yili: 2
+// };
+// delete talaba4.shahar;
+// console.log("Shahar o'chirilgandan keyin:", talaba4);
 
-person.greet = function() {
-  console.log(`Salom, mening ismim ${this.ism}`);
-};
+// //2 MASHQ
 
-person.greet();
+// let person = {
+//   ism: "Karim",
+//   yosh: 30
+// };
 
-//3 MASHQ
+// person.greet = function() {
+//   console.log(`Salom, mening ismim ${this.ism}`);
 
-let kitob = {
-  nomi: "JavaScript Dasturlash",
-  muallif: "Saidjon",
-  yil: 2020
-};
-let yangiKitob = { kitob };
-console.log("Real kitob:", kitob);
-console.log("Nusxa kitob:", yangiKitob);
+// };
+
+// person.greet();
+
+
+
+// //3 MASHQ
+
+// let kitob = {
+//   nomi: "JavaScript Dasturlash",
+//   muallif: "Saidjon",
+//   yil: 2020
+// };
+// let yangiKitob = { kitob };
+// console.log("Real kitob:", kitob);
+// console.log("Nusxa kitob:", yangiKitob);
+
+
+// let languages =["JS","PYTHON","Lava","C++"];
+// const [birinchi,ikkinchi,uchinchi,tortinchi] = ajratilgan;
+// console.log(birinchi);
+// console.log(ikkinchi);
+// console.log(uchinchi);
+// console.log(tortinchi);
+
+
+
+// let product = {
+//   nomi:"Smartfon",
+//   narxi:500,
+//   rangi:"qora",
+// }
+// let { nomi, narxi, rangi, kategiriy = "boshqa" }=product;
+// console.log(nomi);
+// console.log(narxi);
+// console.log(rangi); 
+// console.log(kategiriy);
+
+
+
+// const foydalanuvchi = {
+//   id:1,
+//   ism:"Ulugbek",
+//   manzil:{
+//    shaxar:"Buxoro",
+//    tuman:"Toshken",
+//    kocha:"navoi",
+//   },
+  
+//   kontakt:{
+//     telefon:"+998990010001",
+//     email:"UlugbekKhon@gmail.com",
+//   }
+// };
+// const {ism,manzil:{shaxar,tuman}}=foydalanuvchi
+
+// console.log(ism);
+// console.log(shaxar);
+// console.log(tuman);
+
+const a = [1, 2, 3]
+const b = [4, 5, 6]
+const c = [7, 8, 9]
+
+const birlashgan = [0, ...a, ...b, ...c, 100]
+console.log(birlashgan)
+
+const mahsulot = {
+  nomi: "Laptop",
+  narxi: 5000000,
+  rangi: "Kumush"
+}
+
+const { narxi, ...qolgan } = mahsulot
+const yangiMahsulot = {
+  ...qolgan,
+  narxi: narxi * 1.2,
+  chegirma: true
+}
+console.log(yangiMahsulot)
+
+function kopaytma(...sonlar) {
+  let natija = 1
+  for (const son of sonlar) {
+    natija *= son
+  }
+  return natija
+}
+
+console.log(kopaytma(2, 3, 4))
+console.log(kopaytma(5, 5))
+console.log(kopaytma(1, 2, 3, 4))
