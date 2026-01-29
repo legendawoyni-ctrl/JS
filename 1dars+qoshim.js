@@ -391,35 +391,57 @@
 // console.log(shaxar);
 // console.log(tuman);
 
-const a = [1, 2, 3]
-const b = [4, 5, 6]
-const c = [7, 8, 9]
+// const a = [1, 2, 3]
+// const b = [4, 5, 6]
+// const c = [7, 8, 9]
 
-const birlashgan = [0, ...a, ...b, ...c, 100]
-console.log(birlashgan)
+// const birlashgan = [0, ...a, ...b, ...c, 100]
+// console.log(birlashgan)
 
-const mahsulot = {
-  nomi: "Laptop",
-  narxi: 5000000,
-  rangi: "Kumush"
-}
+// const mahsulot = {
+//   nomi: "Laptop",
+//   narxi: 5000000,
+//   rangi: "Kumush"
+// }
 
-const { narxi, ...qolgan } = mahsulot
-const yangiMahsulot = {
-  ...qolgan,
-  narxi: narxi * 1.2,
-  chegirma: true
-}
-console.log(yangiMahsulot)
+// const { narxi, ...qolgan } = mahsulot
+// const yangiMahsulot = {
+//   ...qolgan,
+//   narxi: narxi * 1.2,
+//   chegirma: true
+// }
+// console.log(yangiMahsulot)
 
-function kopaytma(...sonlar) {
-  let natija = 1
-  for (const son of sonlar) {
-    natija *= son
-  }
-  return natija
-}
+// function kopaytma(...sonlar) {
+//   let natija = 1
+//   for (const son of sonlar) {
+//     natija *= son
+//   }
+//   return natija
+// }
 
-console.log(kopaytma(2, 3, 4))
-console.log(kopaytma(5, 5))
-console.log(kopaytma(1, 2, 3, 4))
+// console.log(kopaytma(2, 3, 4))
+// console.log(kopaytma(5, 5))
+// console.log(kopaytma(1, 2, 3, 4))
+
+
+const mahsulot = "Laptop";
+const narxi = 8500000;
+const rangi = "Kumush";
+
+const xabar = "Siz ${rangi} rangli ${mahsulot} tanladingiz. Narxi: ${narxi} som";
+
+console.log(xabar);
+
+
+
+
+const mahsulot2 = "Telefon";
+const price = 5000000;
+const chegirma = 15; // foiz
+
+const yangiNarx = price - (price * chegirma) / 100;
+
+const text = "${mahsulot2} - Asl narxi: ${price}, Chegirma: ${chegirma}%, Yangi narxi: ${yangiNarx} som";
+
+console.log(text);
